@@ -19,7 +19,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_file: "docs/openapi.yml"
+          source_file: "api/openapi.yaml/*.yaml"
           destination_repo: "t-keshi/swagger-connect-fe"
           destination_folder: ""
           destination_branch: "develop"
