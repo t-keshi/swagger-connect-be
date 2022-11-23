@@ -32,6 +32,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v1
         with:
           repository: "t-keshi/swagger-connect-fe"
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          token: ${{ secrets.API_TOKEN_GITHUB }}
           event-type: update-openapi
         if: env.GIT_DIFF

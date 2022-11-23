@@ -25,7 +25,9 @@ components:
     Response:
       type: object
       properties:
-        label:
+        id:
           type: integer
         name:
+          type: string
+        label:
           type: string
