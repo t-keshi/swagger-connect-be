@@ -7,7 +7,7 @@ on:
       - update-openapi
 
 jobs:
-  update-icon:
+  update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
