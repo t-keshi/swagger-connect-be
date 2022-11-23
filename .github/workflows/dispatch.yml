@@ -12,14 +12,14 @@ jobs:
 
       - uses: technote-space/get-diff-action@v6
         with:
-          PATTERNS: api/openapi.yaml/*.yaml
+          PATTERNS: api/**/*.yaml
 
       - name: Pushes test file
         uses: dmnemec/copy_file_to_another_repo_action@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_file: "api/openapi.yaml/*.yaml"
+          source_file: "api/**/*.yaml"
           destination_repo: "t-keshi/swagger-connect-fe"
           destination_folder: ""
           destination_branch: "develop"
